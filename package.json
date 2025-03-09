@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "serve": "^14.2.4",
-    "server": "^0.0.3"
-  }
-}
