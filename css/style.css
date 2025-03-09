@@ -1,0 +1,50 @@
+/* style.css */
+body {
+    font-family: sans-serif; /* Define a fonte padrão */
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Altura mínima de 100% da viewport */
+    background-color: #f0f0f0; /* Define a cor de fundo */
+    margin: 0; /* Remove as margens padrão */
+}
+
+.container { /* Estiliza o container do formulário */
+    background-color: white; /* Cor de fundo branca */
+    padding: 20px; /* Adiciona padding */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+
+form { /* Estiliza o formulário */
+    text-align: center; /* Centraliza o texto */
+}
+
+label { /* Estiliza os rótulos */
+    display: block; /* Define os rótulos como blocos */
+    margin-bottom: 5px; /* Adiciona margem inferior */
+}
+
+input[type="text"], /* Estiliza os campos de texto */
+input[type="password"] { /* Estiliza os campos de senha */
+    width: 100%; /* Largura total */
+    padding: 10px; /* Adiciona padding */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+    border: 1px solid #ccc; /* Borda sólida cinza claro */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+
+button { /* Estiliza o botão */
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Adiciona padding */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para uma mão */
+}
+
+#message { /* Estiliza a mensagem */
+    margin-top: 10px; /* Adiciona margem superior */
+}
