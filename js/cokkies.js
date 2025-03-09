@@ -26,7 +26,7 @@ function lerCookie(nome) { // Define a função lerCookie que aceita o nome do c
 }
 
 // Evento de submit do formulário
-document.getElementById('loginForm').addEventListener('submit', function (event) { // Adiciona um ouvinte de evento para o evento submit do formulário com id 'loginForm'
+document.getElementById('loginForm').addEventListener('submit', function(event) { // Adiciona um ouvinte de evento para o evento submit do formulário com id 'loginForm'
     event.preventDefault(); // Impede o comportamento padrão do evento submit
 
     const username = document.getElementById('username').value; // Obtém o valor do campo de entrada com id 'username'
@@ -52,7 +52,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
 
 // Evento de carregamento da página
-window.onload = function () { // Define uma função que será executada quando a página for carregada
+window.onload = function() { // Define uma função que será executada quando a página for carregada
     const username = lerCookie('username'); // Lê o valor do cookie 'username' e o armazena na variável username
     if (username) { // Verifica se o cookie 'username' existe
         // O usuário está logado, exibe o conteúdo
@@ -62,12 +62,13 @@ window.onload = function () { // Define uma função que será executada quando 
         content.style.display = 'block'; // Define o estilo de exibição do elemento content como 'block' para torná-lo visível
         loginForm.style.display = 'none'; // Define o estilo de exibição do elemento loginForm como 'none' para ocultá-lo
 
-        // Adiciona evento de clique ao botão de logout
-        document.getElementById('logoutButton').addEventListener('click', function () { // Adiciona um ouvinte de evento para o evento click do botão com id 'logoutButton'
-            criarCookie('username', '', -1); // Define a data de expiração do cookie 'username' para uma data passada para removê-lo
-            window.location.href = "https://sp.senai.br/unidade/campinaszerbini/"; // Redireciona para o site desejado ao clicar em "Sair"
-
-        });
+        
 
     }
+    // Adiciona evento de clique ao botão de logout
+    document.getElementById('logoutButton').addEventListener('click', function() { // Adiciona um ouvinte de evento para o evento click do botão com id 'logoutButton'
+        //criarCookie('username', '', -1); // Define a data de expiração do cookie 'username' para uma data passada para removê-lo
+        window.location.href = "index.html"; // Redireciona para o site desejado ao clicar em "Sair"
+
+    });
 };
