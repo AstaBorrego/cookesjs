@@ -1,0 +1,5 @@
+Adicione as alterações com o comando git add
+Digite git commit -m
+Escreva a mensagem de commit
+Pressione Enter
+ara fazer push de commits de seu branch local para um repositório remoto, use git push 
