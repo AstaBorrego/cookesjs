@@ -1,50 +1,74 @@
 /* style.css */
 body {
-    font-family: sans-serif; /* Define a fonte padrão */
-    display: flex; /* Usa flexbox para centralizar */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    min-height: 100vh; /* Altura mínima de 100% da viewport */
-    background-color: #f0f0f0; /* Define a cor de fundo */
-    margin: 0; /* Remove as margens padrão */
+    /* Estilos para o elemento body */
+    font-family: sans-serif;
+    /* Define a fonte padrão como sans-serif */
+    display: flex;
+    /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    min-height: 100vh;
+    /* Altura mínima de 100% da altura da viewport */
+    margin: 0;
+    /* Remove as margens padrão do body */
+    background-color: #f0f0f0;
+    /* Define a cor de fundo */
 }
 
-.container { /* Estiliza o container do formulário */
-    background-color: white; /* Cor de fundo branca */
-    padding: 20px; /* Adiciona padding */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+.container {
+    /* Estilos para o container */
+    background-color: white;
+    /* Cor de fundo branca */
+    padding: 20px;
+    /* Preenchimento interno */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    text-align: center;
+    /* Centraliza o texto dentro do container */
 }
 
-form { /* Estiliza o formulário */
-    text-align: center; /* Centraliza o texto */
+input[type="text"],
+/* Estilos para inputs de texto e senha */
+input[type="password"] {
+    width: calc(100% - 22px);
+    /* Largura considerando padding e borda */
+    padding: 10px;
+    /* Preenchimento interno */
+    margin-bottom: 10px;
+    /* Margem inferior */
+    border: 1px solid #ccc;
+    /* Borda */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    box-sizing: border-box;
+    /* Inclui padding e border no cálculo da largura */
 }
 
-label { /* Estiliza os rótulos */
-    display: block; /* Define os rótulos como blocos */
-    margin-bottom: 5px; /* Adiciona margem inferior */
+button {
+    /* Estilos para o botão */
+    padding: 10px 20px;
+    /* Preenchimento interno */
+    background-color: #4CAF50;
+    /* Cor de fundo verde */
+    color: white;
+    /* Cor do texto branca */
+    border: none;
+    /* Sem borda */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
 }
 
-input[type="text"], /* Estiliza os campos de texto */
-input[type="password"] { /* Estiliza os campos de senha */
-    width: 100%; /* Largura total */
-    padding: 10px; /* Adiciona padding */
-    margin-bottom: 10px; /* Adiciona margem inferior */
-    border: 1px solid #ccc; /* Borda sólida cinza claro */
-    border-radius: 4px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total */
-}
 
-
-button { /* Estiliza o botão */
-    background-color: #4CAF50; /* Cor de fundo verde */
-    color: white; /* Cor do texto branca */
-    padding: 10px 20px; /* Adiciona padding */
-    border: none; /* Remove a borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para uma mão */
-}
-
-#message { /* Estiliza a mensagem */
-    margin-top: 10px; /* Adiciona margem superior */
+#message {
+    /* Estilos para a div de mensagem */
+    margin-top: 10px;
+    /* Margem superior */
+    color: red;
+    /* Cor do texto vermelha */
 }
