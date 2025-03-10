@@ -6,7 +6,13 @@ const messageDiv = document.getElementById('message');
 const correctUsername = "admin"; // **INSEGURO!**  Não armazene credenciais no cliente
 const correctPassword = "1234"; // **INSEGURO!**
 
-var tipo="p"
+// irá executar o leitor de libras
+document.addEventListener('DOMContentLoaded', function() {
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+});
+
+
+var tipo = "p"
 // Ouvinte de evento para o formulário (login)
 loginForm.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -14,7 +20,7 @@ loginForm.addEventListener('submit', function (event) {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === correctUsername && password === correctPassword && tipo==="p") {
+    if (username === correctUsername && password === correctPassword && tipo === "p") {
         // ... (lógica para cookies, se necessário)
         window.location.href = "principal.html";
     } else {
@@ -25,17 +31,17 @@ loginForm.addEventListener('submit', function (event) {
 
 // Ouvinte de evento para o link/botão de cadastro
 if (cadast) {
-   
+
     cadast.addEventListener('click', function (event) {
         // Impede o comportamento padrão se 'cadast' for um link <a>
         //event.preventDefault(); -> removi pois no html cadast esta como <spam>
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
-         tipo="c";
+        tipo = "c";
 
-        if (username === correctUsername && password === correctPassword && tipo==="c") {
+        if (username === correctUsername && password === correctPassword && tipo === "c") {
             event.stopPropagation(); // Impede a propagação do evento
-            window.location.href = "cadastro.html"; 
+            window.location.href = "cadastro.html";
         } else {
             alert("Você não tem permissão para cadastrar usuário.");
             document.getElementById("username").focus();

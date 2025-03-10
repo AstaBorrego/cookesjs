@@ -7,11 +7,27 @@
     <!-- Configura a viewport para dispositivos móveis -->
     <title>🍪 - Tela de Login - 🍪</title> <!-- Título da página que aparece na aba do navegador -->
     <!-- colocando icone na aba do site -->
-     <link rel="shortcut icon" href="./img/cooke.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/cooke.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 
 <body>
+    <!-- Código de leitura em Libras -->
+
+    <!-- inicio ACESSIBILIDADE EM LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- fim ACESSIBILIDADE EM LIBRAS -->
+
+
     <div class="container"> <!-- Container principal para centralizar o conteúdo -->
         <h1>Login</h1> <!-- Título principal da página -->
         <form id="loginForm"> <!-- Formulário de login com ID "loginForm" -->
@@ -19,14 +35,15 @@
             <!-- Campo de entrada para nome de usuário -->
             <input type="password" id="password" placeholder="Senha" required> <!-- Campo de entrada para senha -->
             <div id="botoes">
-            <button id='entra' type="submit">Entrar</button> <!-- Botão de envio do formulário -->
-            <button id="cadast" type="submit">cadastrar</button> <!-- Botão de envio do formulário -->
-        </div>
+                <button id='entra' type="submit">Entrar</button> <!-- Botão de envio do formulário -->
+                <button id="cadast" type="submit">cadastrar</button> <!-- Botão de envio do formulário -->
+            </div>
         </form>
         <div id="cadas"></div> <!-- Div para exibir mensagens de erro -->
     </div>
 
-    <script src="./js/cokkies.js"></script> <!-- Link para o arquivo JavaScript externo -->
+
 </body>
+<script src="./js/cokkies.js"></script> <!-- Link para o arquivo JavaScript externo -->
 
 </html>
